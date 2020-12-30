@@ -1,21 +1,15 @@
 package com.codewithseby;
 
 /*
-86. Write a Java program start with an integer n, divide n by 2 if n is even or multiply by 3 and add 1 if n is odd,
-repeat the process until n = 1. Go to the editor
+87. Write a Java program than read an integer (87) and calculate the sum of its digits (suma = 15 )  and
+write the number of each digit of the sum in English. Go to the editor  ( 1 = one si 5 = five)
  */
 
-import java.util.Arrays;
+
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-int n;
+public static void main (String [] args) {
 
- if  (n % 2 == 0 ) {
-
- }
-
-
-
-    }
+}
 }
