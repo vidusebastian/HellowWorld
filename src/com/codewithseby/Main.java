@@ -1,15 +1,21 @@
 package com.codewithseby;
 
 /*
-87. Write a Java program than read an integer (87) and calculate the sum of its digits (suma = 15 )  and
-write the number of each digit of the sum in English. Go to the editor  ( 1 = one si 5 = five)
+La 99 am ajuns
+
+
+
  */
 
-
-import java.io.*;
-
+import java.io.File;
 public class Main {
-public static void main (String [] args) {
-
-}
+    public static void main(String[] args) {
+        {
+            File file = new File("E:\\Munca\\");
+            String[] fileList = file.list();
+            for (String name : fileList) {
+                System.out.println(name);
+            }
+        }
+    }
 }
