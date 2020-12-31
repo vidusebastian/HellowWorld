@@ -2,20 +2,30 @@ package com.codewithseby;
 
 /*
 La 99 am ajuns
-
-
-
  */
 
 import java.io.File;
+
 public class Main {
-    public static void main(String[] args) {
-        {
-            File file = new File("E:\\Munca\\");
-            String[] fileList = file.list();
-            for (String name : fileList) {
-                System.out.println(name);
+    public static int g(int a) {
+        if (a < 9) {
+            return 9;
+        }
+
+        if (a < 7) {
+            return 7;
+        }
+
+        if (a < 4) {
+            return 4;
+        }
+
+        return 0;
+    }
+            public static void main (String[]args){
+                System.out.println(g(5));
+
             }
         }
-    }
-}
+
+
