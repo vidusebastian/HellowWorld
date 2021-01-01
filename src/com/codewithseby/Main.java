@@ -4,28 +4,32 @@ package com.codewithseby;
 La 99 am ajuns
  */
 
+import java.awt.*;
 import java.io.File;
+import java.util.Scanner;
 
 public class Main {
-    public static int g(int a) {
-        if (a < 9) {
-            return 9;
-        }
+    int x,y;
+    private  int  z= 13;
+    //Constructor
+ public Main (int x, int y, int z) {
+     this.x= x;
+     this.y=y;
+     this.z=z;
+ }
+ public int getZ () {
+     return z;
+ }
 
-        if (a < 7) {
-            return 7;
-        }
+    public int mymethod(Main other) {
+return this.x + this.y + x +y ;
 
-        if (a < 4) {
-            return 4;
-        }
-
-        return 0;
     }
-            public static void main (String[]args){
-                System.out.println(g(5));
 
-            }
-        }
+    public static void main(String[] args) {
 
 
+
+
+    }
+}
