@@ -9,6 +9,7 @@ public class Constructormodel {
         this.x= x;
         this.y=y;
         this.z=z;  // cand chemam variabila z dintr-un obiect va da valoare parametrului pus pe obiect. Alt caz Daca z = z va da valoarea lui z = 13.
+    // this se refera la parametrul obiectului
     }
     public int getZ () {
         return z;
