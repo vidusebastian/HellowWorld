@@ -1,13 +1,9 @@
 package com.codewithseby;
 
-/*
-108. Write a Java program to add all the digits of a given positive integer until the result has a single digit. G
- */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Inversulunuinumar {
     public static void main(String args[]) {
         //input number to reverse
         System.out.println("Please enter number to be reversed using Java program: ");
