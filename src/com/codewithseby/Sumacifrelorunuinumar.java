@@ -39,7 +39,7 @@ public class Sumacifrelorunuinumar {
 
             n /= 10;  // Pentru continuarea buclei se foloseste incremental sau decremental in cazul nostru 10. Ca sa ajungem la zero
             // ca sa se opreasca bucla . (0 != 0  adica FALSE) .
-            // n = n :10    25:10  = 2.5  rotunjit n =2  ( care e chiar ifra 2 prima cifra a numarului care a mai ramas ;
+            // n = n :10    25:10  = 2.5  rotunjit n =2  (Ne da restul de cifre din numarul care a mai ramas. In cazul nostru a mai ramas decat 2 )
 
             /*
             Se repeta bucla din nou :
