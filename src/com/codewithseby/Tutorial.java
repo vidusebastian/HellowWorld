@@ -1,4 +1,7 @@
 package com.codewithseby;
+/*
+108. Write a Java program to add all the digits of a given positive integer until the result has a single digit. G
+ */
 
 //{ se pune pe aceeasi linie cu clasa deschisa. Numele clasei trebuie sa inceapa cu litera mare si sa aiba acelasi nume cu fisierul java.
 

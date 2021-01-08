@@ -1,38 +1,48 @@
 package com.codewithseby;
 
-/*
-108. Write a Java program to add all the digits of a given positive integer until the result has a single digit. G
- */
-
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-        //input number to reverse
-        System.out.println("Please enter number to be reversed using Java program: ");
-        int number = new Scanner(System.in).nextInt();
+        double tax = 0.2, total = 0.0;
+        System.out.println("Welcome to Duke CHoice shop");
+        Customer c1 = new Customer();
+        c1.name = "Pinky";
+        c1.size = "S";
+        System.out.println("Customer is " + c1.name);
 
-        int reverse = mymethod(number);
-        System.out.println("Reverse of number: " + number + " is " + mymethod(number));
+        Clothing item1 = new Clothing();
+        Clothing item2 = new Clothing();
 
-    }
+        item1.description = "Blue Jacket";
+        item1.price = 20.9;
+        item1.size = "M";
 
-    /*
-     * reverse a number in Java using iteration
-     * @return reverse of number
-     */
-    public static int mymethod(int number) {
-        int reverse = 0;
-        int remainder = 0;
-        do {
-            remainder = number % 10;
-            reverse = reverse * 10 + remainder;
-            number = number / 10;
+        item2.description = "Orange T-Shirt";
+        item2.price = 10.5;
+        item2.size = "S";
 
-        } while (number > 0);
+        System.out.println("Item1" + "," + item1.description + "," + item1.price + "," + item1.size);
+        System.out.println("Item2" + "," + item2.description + "," + item2.price + "," + item2.size);
 
-        return reverse;
+        total = (item1.price + item2.price * 2) * (1 + tax);
+
+        System.out.println("Total is : " + total);
+
+        int measurement = 3 ;
+
+         switch (measurement) {
+             case 1: case 2: case 3:
+                 c1.size= "S";
+                 break;
+             case 4,5,6:
+                 c1.size = "R";
+                 break;
+             case 7,8,9:
+                 c1.size="L";
+                 break;
+             default:
+                 c1.size="X";
+         }
     }
 
 }
