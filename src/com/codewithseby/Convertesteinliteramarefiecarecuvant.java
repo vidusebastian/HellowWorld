@@ -13,7 +13,7 @@ public class Convertesteinliteramarefiecarecuvant {
         for (int i = 0; i < charArray.length; i++) {
 
             // if the array element is a letter
-            if (Character.isLetter(charArray[i])) {                // i = 0  charArray[0] = litera "t" Daca litera "t" este litera.
+            if (Character.isLetter(charArray[i])) {                 // i = 0  charArray[0] = litera "t" Daca litera "t" este litera.
                 // cand va ajunge la i=3 la spatiul gol dupa cuvantul "the " va face verifica daca spatiul gol este litera si ii va da FALSE
          // si va intra pe else-ul de mai jos care va face foundSpace = TRUE si care va intra din nou pe ultimul inner IF si va face litera mare
 
