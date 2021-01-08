@@ -25,6 +25,7 @@ public class Main {
         item2.price = 10.5;
         item2.size = "S";
 
+
         System.out.println("Item1" + "," + item1.description + "," + item1.price + "," + item1.size);
         System.out.println("Item2" + "," + item2.description + "," + item2.price + "," + item2.size);
 
