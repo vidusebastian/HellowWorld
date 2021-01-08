@@ -13,13 +13,12 @@ public class Main {
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
 
-        Clothing [] items = { item1 , item2 };
-
+        Clothing [] items = { item1 , item2 };  // Array de obiecte
+        // items[0].size = "J";  // Schimbam size-ul pentru primul obiect din Array adica item1.size = "J" .
 
         item1.description = "Blue Jacket";
         item1.price = 20.9;
         item1.size = "M";
-
 
 
         item2.description = "Orange T-Shirt";
