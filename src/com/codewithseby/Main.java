@@ -2,14 +2,17 @@ package com.codewithseby;
 
 
 public class Main {
+
+
     public static void main(String args[]) {
         double tax = 0.2;
         double total = 0.0;
 
+
         //  System.out.println("Welcome to Duke CHoice shop");
         Customer c1 = new Customer();
-        c1.name = "Pinky";
-        c1.size = "S";
+        c1.setName("Pinky");
+        c1.setSize("S");
         // System.out.println("Customer is " + c1.name);
 
         Clothing item1 = new Clothing();
@@ -52,23 +55,23 @@ public class Main {
             case 1:
             case 2:
             case 3:
-                c1.size = "S";
+                c1.setSize("S");
                 break;
             case 4:
             case 5:
             case 6:
-                c1.size = "R";
+                c1.setSize("R");
                 break;
             case 7:
             case 8:
             case 9:
-                c1.size = "L";
+                c1.setSize("L");
                 break;
             default:
-                c1.size = "X";
+                c1.setSize("X");
         }
         for (Clothing item : items) {
-            if (c1.size.equals(item.size )) {
+            if (c1.getSize().equals(item.size )) {
                 total = total + item.price;  // 0 + 20.9 = 20.9   // total = 20.9 + 10.5 = 31.4 // total = 31.4
                 System.out.println("Item" + "," + item.description + "," + item.price + "," + item.size);
             if (total> 15) {
