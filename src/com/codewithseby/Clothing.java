@@ -7,6 +7,8 @@ public class Clothing {
     private double price;
     private String size;
 
+
+
     private final double MIN_PRICE = 10.0;
     private final double MIN_TAX = 0.2;
 
