@@ -1,6 +1,6 @@
 package com.codewithseby;
 
-public class Clothing {
+public class Clothing implements Comparable<Clothing> {
 
 
     private String description;
@@ -11,11 +11,6 @@ public class Clothing {
         this.description = description;
         this.price = price;
         size = aSize;
-    }
-
-    @Override
-    public  String toString () {
-       return getDescription() + "," + getPrice() + "," + getSize();
     }
 
     public static final double MIN_PRICE = 10.0;
@@ -30,9 +25,9 @@ public class Clothing {
         this.description = description;
     }
 
-   // public double getPrice() {
-     //   return price + (price+ MIN_TAX);
- //   }
+    // public double getPrice() {
+    //   return price + (price+ MIN_TAX);
+    //   }
 
 
     public double getPrice() {
@@ -44,7 +39,7 @@ public class Clothing {
     }
 //  public void setPrice(double price) {
     //    this.price = (price > MIN_PRICE) ?  price : MIN_PRICE;
-  //  }
+    //  }
 
     public String getSize() {
         return size;
@@ -53,4 +48,15 @@ public class Clothing {
     public void setSize(String size) {
         this.size = size;
     }
+
+    @Override
+    public String toString() {
+        return getDescription() + "," + getPrice() + "," + getSize();
+    }
+
+    @Override
+    public int compareTo(Clothing c) {
+return this.description.compareTo(c.description);
+    }
+
 }
