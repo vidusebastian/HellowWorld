@@ -1,7 +1,7 @@
 package com.codewithseby;
 
 
-public class Main {
+public class Main  {
 
 
     public static void main(String args[]) {
@@ -40,8 +40,10 @@ public class Main {
         System.out.println("Customer is " + c1.getName() + " , " + c1.getSize() + " , " + c1.getTotalClothingCost());
 
         for (Clothing item : c1.getItems()) {
-            System.out.println("Items " + item.getDescription());
+           //System.out.println("Items " + item.getDescription());
             // System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());
+
+            System.out.println("Item output " + item);
         }
         System.out.println("Total is : " + total);
         int average = 0;
@@ -64,7 +66,7 @@ public class Main {
             System.out.println("Average is " + average + " and the count is " + count);
         }
         catch (ArithmeticException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
             System.out.println("Dont divide by 0");
         }
 

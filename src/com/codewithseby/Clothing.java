@@ -13,6 +13,11 @@ public class Clothing {
         size = aSize;
     }
 
+    @Override
+    public  String toString () {
+       return getDescription() + "," + getPrice() + "," + getSize();
+    }
+
     public static final double MIN_PRICE = 10.0;
     public static final double MIN_TAX = 0.2;
 
