@@ -11,34 +11,19 @@ public class Main {
 
         //  System.out.println("Welcome to Duke CHoice shop");
         Customer c1 = new Customer("Pinky", 3);
-      // c1.setName("Pinky");
-       // c1.setSize("S");
+        // c1.setName("Pinky");
+        // c1.setSize("S");
+
+        System.out.println("The minimum price is : " + Clothing.MIN_PRICE);
+
+        Clothing item1 = new Clothing("Blue Jacket", 20.9, "M");
+        Clothing item2 = new Clothing("Orange T-Shirt", 10.5, "S");
 
 
-        Clothing item1 = new Clothing();
-        Clothing item2 = new Clothing();
-
-
-        Clothing[] items = {item1, item2, new Clothing(), new Clothing()};  // Array de obiecte  .  se pot declara obiectele
+        Clothing[] items = {item1, item2, new Clothing("Green Scarf", 5, "S"), new Clothing("Blue T-Shirt", 10.5, "S")};
+        // Array de obiecte  .  se pot declara obiectele
         // direct in array cu numele new Clothing () si nu mai trebuie sa le declaram in liniile de mai sus
         // items[0].size = "J";  // Schimbam size-ul pentru primul obiect din Array adica item1.size = "J" .
-
-        item1.setDescription("Blue Jacket");
-        item1.setPrice(20.9);
-        item1.setSize("M");
-
-
-        item2.setDescription("Orange T-Shirt");
-        item2.setPrice(10.5);
-        item2.setSize("S");
-
-        items[2].setDescription("Green Scarf");
-        items[2].setPrice(5);
-        items[2].setSize("S");
-
-        items[3].setDescription("Blue T-Shirt");
-        items[3].setPrice(10.5);
-        items[3].setSize("S");
 
 
         // System.out.println("Item1" + "," + item1.description + "," + item1.price + "," + item1.size);
@@ -51,13 +36,40 @@ public class Main {
 
         int measurement = 8;
         c1.addItems(items);
-       // c1.setSize(measurement);
-        System.out.println("Customer is " + c1.getName() + " , " + c1.getSize()+ " , " + c1.getTotalClothingCost());
+        // c1.setSize(measurement);
+        System.out.println("Customer is " + c1.getName() + " , " + c1.getSize() + " , " + c1.getTotalClothingCost());
 
         for (Clothing item : c1.getItems()) {
             System.out.println("Items " + item.getDescription());
-               // System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());
-            }
+            // System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());
+        }
         System.out.println("Total is : " + total);
+        int average = 0;
+        int count = 0;
+
+
+        for (Clothing item : items) {
+            if (item.getSize().equals("L")) {
+                count++;
+                average += item.getPrice();
+
+            }
+        }
+
+        average = (average == 0) ? 0 : average/count;
+
+        try {
+            average = average / count;
+
+            System.out.println("Average is " + average + " and the count is " + count);
+        }
+        catch (ArithmeticException e) {
+            e.printStackTrace();
+            System.out.println("Dont divide by 0");
+        }
+
+
+
+
     }
 }
