@@ -11,6 +11,7 @@ public class Customer {
     }
 
     public void addItems(Clothing[] someItems) {
+
         items = someItems;
     }
 

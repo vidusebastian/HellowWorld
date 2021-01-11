@@ -15,7 +15,7 @@ Comanda conditie comanda   =   if (x<5) { System.out.prinln (i);}
 for (int i=0; i<5; i++) {System.out.println ("ce vrem noi se va printa de i ori");
 System.out.println(cars[i]);  = cars de index i , unde i este definit inainte. ADica de exemplu daca avem i are valorile 1,2,3,4. Noi vom aveam print [1], [2]. [3].
 for (String i : cars)  =  loop printre valorile din Array.
-String - 'Test1'
+String - 'Arrayofobjectssorting'
 int - 1 , 2 ,3 ,4
 float - 1,23f
 double - 1,23d

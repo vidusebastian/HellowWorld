@@ -3,6 +3,8 @@ package com.codewithseby;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.ArrayList;
 
 public class Main  {
 
@@ -76,11 +78,17 @@ public class Main  {
 
 
         Arrays.sort(c1.getItems());
+
         for (Clothing item : c1.getItems()) {
             //System.out.println("Items " + item.getDescription());
             // System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());
 
             System.out.println("Item output " + item);
         }
+
+
+
+        }
+
     }
-}
+
