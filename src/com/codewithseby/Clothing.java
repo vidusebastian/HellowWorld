@@ -51,6 +51,7 @@ public class Clothing implements Comparable<Clothing> {
         this.size = size;
     }
 
+    //Facem overried la functia toString ca sa afiseze obiectele ca niste stringuri
     @Override
     public String toString() {
         return getDescription() + "," + getPrice() + "," + getSize();
