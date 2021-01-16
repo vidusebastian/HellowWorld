@@ -46,8 +46,8 @@ public class Employee {
         employees = someEmployees;
     }
 
-    public String toString(){//overriding the toString() method
-        return id+" "+name+" "+salary;
+  public String toString () {
+        return id + " " +  name + " " + salary ;
     }
 }
 
