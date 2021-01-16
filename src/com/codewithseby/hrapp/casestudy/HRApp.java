@@ -13,14 +13,16 @@ public class HRApp {
 
         Employee e1 = new Employee(4, "John", 433);
 
-       // Employee[] angajati = {new Employee(1, "Andrei", 2000), new Employee(2, "Boboc", 3000)};
-        Employee[] angajati = new Employee[10];
-        d1.addEmployees(angajati);
+       Employee[] angajati = {new Employee(1, "Andrei", 2000), new Employee(2, "Boboc", 3000)};
+       // Employee[] angajati = new Employee[10];
+
+        //?d1.addEmployees(angajati);
 
         for (Employee angvaloare : d1.getEmployees()) {
             System.out.println("Employees are : " + angvaloare);
 
         }
+
         try {
             System.out.println("Total salary is: " + d1.totalsalary());
         }

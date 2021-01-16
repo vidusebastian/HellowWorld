@@ -5,6 +5,8 @@ public class Department {
     private String name;
     private Employee[] employees = new Employee[10];
 
+    private int lastAddedIndexEmployees = -1;
+
     public Department(String pName) {
         name = pName;
     }
@@ -22,14 +24,25 @@ public class Department {
     }
 
     // Adaugam angajati in array
-    public void addEmployees(Employee[] someEmployees) {
+    public void addEmployees(Employee someEmployees) {
+        if (lastAddedIndexEmployees < employees.length) {
+            lastAddedIndexEmployees++;
+            employees[lastAddedIndexEmployees] = someEmployees;
+        }
 
-            employees = someEmployees;
 
     }
 
     public Employee[] getEmployees() {
-        return employees;
+        Employee[] actualEmployees = new Employee[lastAddedIndexEmployees + 1];
+        for (int i = 0; i < actualEmployees.length; i++) {
+            actualEmployees[i] = employees[i];
+        }
+        return actualEmployees;
+    }
+
+    public int getEmploycount() {
+        return lastAddedIndexEmployees + 1;
     }
 
 
@@ -50,13 +63,13 @@ public class Department {
     }
 
     public Employee identificatoremployee(int pident) {
-        Employee x = new Employee(0, "dummy", 0);
+
         for (Employee ididentif : employees) {
             if (pident == ididentif.getId()) {
-                x = ididentif;
+                return ididentif;
             }
-               }
-        return x;
+        }
+        return null;
 
     }
 
