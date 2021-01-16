@@ -1,4 +1,4 @@
-package com.codewithseby;
+package com.codewithseby.hrapp.casestudy;
 
 import java.awt.image.ReplicateScaleFilter;
 
@@ -42,7 +42,7 @@ public class Employee {
 
 
   public String toString () {
-        return id + " " +  name + " " + salary ;
+        return "Employee" + " " + id + " " +  name + " " + salary ;
     }
 }
 

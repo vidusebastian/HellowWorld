@@ -1,4 +1,4 @@
-package com.codewithseby;
+package com.codewithseby.hrapp.casestudy;
 
 public class Department {
 
@@ -23,7 +23,9 @@ public class Department {
 
     // Adaugam angajati in array
     public void addEmployees(Employee[] someEmployees) {
-        employees = someEmployees;
+
+            employees = someEmployees;
+
     }
 
     public Employee[] getEmployees() {
@@ -48,7 +50,7 @@ public class Department {
     }
 
     public Employee identificatoremployee(int pident) {
-        Employee x = new Employee(0, null, 0);
+        Employee x = new Employee(0, "dummy", 0);
         for (Employee ididentif : employees) {
             if (pident == ididentif.getId()) {
                 x = ididentif;
