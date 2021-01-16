@@ -13,8 +13,8 @@ public class HRApp {
 
         d1.addEmployees(angajati);
 
-        for (Employee item : d1.getEmployees()) {
-            System.out.println("Employees output: " + item);
+        for (Employee angvaloare : d1.getEmployees()) {
+            System.out.println("Employees output: " + angvaloare);
         }
 
 
