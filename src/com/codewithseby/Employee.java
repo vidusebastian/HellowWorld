@@ -7,10 +7,21 @@ public class Employee {
     private double salary;
 
 
-    public Employee(int iId, String iName, double iSalary) {
-        id = iId;
-        name = iName;
-        salary = iSalary;
+    public Employee(int pId, String pName, double pSalary) {
+        id = pId;
+        name = pName;
+        salary = pSalary;
 
     }
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
+

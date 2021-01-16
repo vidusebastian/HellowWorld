@@ -7,6 +7,8 @@ public class Clothing implements Comparable<Clothing> {
     private double price;
     private String size;
 
+
+
     public Clothing(String description, double price, String aSize) {
         this.description = description;
         this.price = price;
