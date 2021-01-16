@@ -61,7 +61,7 @@ public class Department {
         }
         return avgsalariu / employees.length;
     }
-
+//Functie care cauta dupa id utilizator . O functie poate sa returneze si null ca sa putem folosi return intr-un if
     public Employee identificatoremployee(int pident) {
 
         for (Employee ididentif : employees) {
