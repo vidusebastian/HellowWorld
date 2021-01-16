@@ -9,7 +9,7 @@ public class Department {
         name = pName;
     }
 
-    public String toString () {
+    public String toString() {
         return name;
     }
 
@@ -20,25 +20,26 @@ public class Department {
     public void setName(String name) {
         this.name = name;
     }
-// Adaugam angajati in array
-    public void addEmployees(Employee[] someEmployees ) {
+
+    // Adaugam angajati in array
+    public void addEmployees(Employee[] someEmployees) {
         employees = someEmployees;
     }
 
     public Employee[] getEmployees() {
-        return employees ;
+        return employees;
     }
 
 
-    public double totalsalary () {
-        double total=0;
+    public double totalsalary() {
+        double total = 0;
         for (Employee angvaloare : employees) {
-           total = total + angvaloare.getSalary() ;
+            total = total + angvaloare.getSalary();
         }
         return total;
     }
 
-    public double avgsalary () {
+    public double avgsalary() {
         double avgsalariu = 0;
         for (Employee angvaloare : employees) {
             avgsalariu = avgsalariu + angvaloare.getSalary();
@@ -46,11 +47,18 @@ public class Department {
         return avgsalariu / employees.length;
     }
 
-    public int identificatoremployee (int pident) {
-       return 0;
-        }
+    public Employee identificatoremployee(int pident) {
+        Employee x = new Employee(0, null, 0);
+        for (Employee ididentif : employees) {
+            if (pident == ididentif.getId()) {
+                x = ididentif;
+            }
+               }
+        return x;
 
     }
+
+}
 
 
 

@@ -15,10 +15,9 @@ public class HRApp {
         Department[] departamente = {new Department("HR"), new Department("Resurse Umane")};
 
 
+        Employee e1 = new Employee(4, "John", 433);
 
-        Employee e1 = new Employee (4, "John", 433);
-
-        Employee [] angajati = { new Employee(1, "Andrei", 2000), new Employee(2, "Boboc", 3000), e1};
+        Employee[] angajati = {new Employee(1, "Andrei", 2000), new Employee(2, "Boboc", 3000), e1};
 
         d1.addEmployees(angajati);
 
@@ -27,9 +26,12 @@ public class HRApp {
 
         }
         System.out.println("Total salary is: " + d1.totalsalary());
-        System.out.println("Average salary is: "  + d1.avgsalary());
+        System.out.println("Average salary is: " + d1.avgsalary());
 
 
+        // Cautare dupa ID employee
+        int y = 4;
+        System.out.println("Utilizatorul cu ID-ul " + y + " este " + d1.identificatoremployee(y));
 
 
     }
