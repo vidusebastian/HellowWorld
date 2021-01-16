@@ -1,11 +1,13 @@
 package com.codewithseby;
 
+import java.awt.image.ReplicateScaleFilter;
+
 public class Employee {
 
     private int id;
     private String name;
     private double salary;
-    private Employee[] employees;
+
 
     public Employee(int pId, String pName, double pSalary) {
         id = pId;
@@ -38,13 +40,6 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee[] getEmployees() {
-        return employees;
-    }
-
-    public void addEmployees(Employee[] someEmployees) {
-        employees = someEmployees;
-    }
 
   public String toString () {
         return id + " " +  name + " " + salary ;
