@@ -19,9 +19,10 @@ public class HRApp {
 
         for (Employee angvaloare : d1.getEmployees()) {
             System.out.println("Employees are : " + angvaloare);
-
+           // System.out.println("Alta abordare pentru linia de mai sus: " + angvaloare.getId() +  " " + angvaloare.getSalary() + " " + angvaloare.getName());
         }
 
+        System.out.println("Numar de angajati: " + d1.getEmploycount());
 
         System.out.println("Total salary is: " + d1.getTotalSalary());
 

@@ -23,7 +23,7 @@ public class Department {
         this.name = name;
     }
 
-    // Adaugam angajati in array
+    // Adaugam angajati in array dar sa nu depaseasca array lengftul
     public void addEmployees(Employee someEmployees) {
         // Arrayul lenght maxim in cazul nostru este pana la 10 , dar lastaddexindex poate fi de la 0 la 9 maxim.
         if (lastAddedIndexEmployees < employees.length) {        // if ( -1 < 0 )
@@ -44,7 +44,7 @@ public class Department {
     }
 
     public int getEmploycount() {
-        return lastAddedIndexEmployees + 1;
+                return lastAddedIndexEmployees + 1;
     }
 
 
