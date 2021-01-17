@@ -18,7 +18,7 @@ public class Palindromverif {
 
         for (int i = 0; i < myArray.length / 2; i++) {  // Imparte la 2 ca sa ajunga la indexul pana la litera din mijloc fara ea.
             char temp = myArray[i];        // Salveaza valorile array-ului in variabila char
-            myArray[i] = myArray[myArray.length-i-1];       // Override la indexul array-ului Original  myarray[0] = myarray [4]  myaray[1] = myarray [3]
+            myArray[i] = myArray[myArray.length-i-1];       // ? e in plus linia asta? Override la indexul array-ului Original  myarray[0] = myarray [4]  myaray[1] = myarray [3]
             myArray[myArray.length-i-1] = temp;   // Override la valoarile din primul array  myarray [4] = "A"
         }
         System.out.println("Original Array"+Arrays.toString(original));
