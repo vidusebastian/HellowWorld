@@ -35,7 +35,8 @@ public class Department {
     }
 
     public Employee[] getEmployees() {
-        Employee[] actualEmployees = new Employee[lastAddedIndexEmployees + 1];
+        Employee[] actualEmployees = new Employee[lastAddedIndexEmployees + 1];  // lastaddedxindex =2 (0,1,2) daca
+        // avem 3 obiecte adaugate din functia de mai sus addemployess //  2 +1 =3 ne va da lenghtul arrayului nou
         for (int i = 0; i < actualEmployees.length; i++) {
             actualEmployees[i] = employees[i];
         }
