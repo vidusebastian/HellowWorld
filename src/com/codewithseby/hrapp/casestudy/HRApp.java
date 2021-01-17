@@ -36,7 +36,7 @@ public class HRApp {
         try {
             System.out.println("The employ with the id specified is : " + d1.identificatoremployee(8));
         } catch (NullPointerException n) {
-           // n.printStackTrace();
+           n.printStackTrace();
             System.out.println("Try catch aici : There is no employee with that id");
         }
 
