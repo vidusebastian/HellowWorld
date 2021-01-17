@@ -8,13 +8,12 @@ public class Palindromverif {
         String sintrodus = "ABCBA";
 
         char[] myArray = sintrodus.toCharArray();
-        int size = myArray.length;
         char [] original = Arrays.copyOf(myArray,myArray.length);
 
-        for (int i = 0; i < size / 2; i++) {
+        for (int i = 0; i < myArray.length / 2; i++) {
             char temp = myArray[i];
-            myArray[i] = myArray[size-i-1];
-            myArray[size-i-1] = temp;
+            myArray[i] = myArray[myArray.length-i-1];
+            myArray[myArray.length-i-1] = temp;
         }
         System.out.println("Original Array"+Arrays.toString(original));
         System.out.println("Reverse Array"+Arrays.toString(myArray));
