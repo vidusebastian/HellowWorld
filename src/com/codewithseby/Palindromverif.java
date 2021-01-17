@@ -3,7 +3,7 @@ package com.codewithseby;
 import java.util.Arrays;
 
 // 1. Convertim stringul introdus intr-un array de caractere
-// 2. Copiem valorile array-ului original in alt array.
+// 2. Copiem valorile array-ului original in alt array pentru comparare pentru punctul (4).
 // 3. Loop prin primul array  dar pana la jumatatea indexului adica la litera din mijloc si  Arrayul original devine reverse
 // 4. Comparam cele 2 arrayuri cu equals si printam daca este sau nu palindrom
 
