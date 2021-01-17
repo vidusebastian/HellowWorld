@@ -2,7 +2,7 @@ package com.codewithseby;
 
 import java.util.Arrays;
 
-public class Palindrom {
+public class Palindromverif {
     public static void main(String args[]) {
 
         String sintrodus = "ABCBA";
