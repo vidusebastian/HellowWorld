@@ -29,14 +29,13 @@ public class HRApp {
         System.out.println("Average salary is: " + d1.avgsalary());
 
 
+
         // Cautare dupa ID employee
-
         try {
-
             System.out.println("The employ with the id specified is : " + d1.identificatoremployee(8));
         } catch (NullPointerException n) {
-            n.printStackTrace();
-            System.out.println("There is no employee with that id");
+           // n.printStackTrace();
+            System.out.println("Try catch aici : There is no employee with that id");
         }
 
 

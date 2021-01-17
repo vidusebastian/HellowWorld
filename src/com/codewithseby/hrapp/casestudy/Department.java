@@ -57,12 +57,12 @@ public class Department {
     }
 
     public double avgsalary() {
-        double avgsalariu = 0;
-        for (Employee angvaloare : employees) {
-            avgsalariu = avgsalariu + angvaloare.getSalary();
+        if (lastAddedIndexEmployees > -1) {
+            return getTotalSalary() / (lastAddedIndexEmployees + 1);
         }
-        return avgsalariu / employees.length;
+        return 0.0;
     }
+
 //Functie care cauta dupa id utilizator . O functie poate sa returneze si null ca sa putem folosi return intr-un if
     public Employee identificatoremployee(int pident) {
 
