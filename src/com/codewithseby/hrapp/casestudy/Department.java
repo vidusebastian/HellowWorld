@@ -25,9 +25,10 @@ public class Department {
 
     // Adaugam angajati in array
     public void addEmployees(Employee someEmployees) {
-        if (lastAddedIndexEmployees < employees.length) {
-            lastAddedIndexEmployees++;
-            employees[lastAddedIndexEmployees] = someEmployees;
+        // Arrayul lenght maxim in cazul nostru este pana la 10 , dar lastaddexindex poate fi de la 0 la 9 maxim.
+        if (lastAddedIndexEmployees < employees.length) {        // if ( -1 < 0 )
+            lastAddedIndexEmployees++;                           // -1 +1 = 0
+            employees[lastAddedIndexEmployees] = someEmployees;  //  employees [0] = someEmployees ;
         }
 
 
@@ -46,12 +47,12 @@ public class Department {
     }
 
 
-    public double totalsalary() {
-        double total = 0;
-        for (Employee angvaloare : employees) {
-            total = total + angvaloare.getSalary();
+    public double getTotalSalary() {
+        double totalSalary = 0;
+        for (int i = 0;  i < lastAddedIndexEmployees; i++) {
+            totalSalary += employees[i].getSalary();
         }
-        return total;
+        return totalSalary;
     }
 
     public double avgsalary() {
