@@ -11,11 +11,13 @@ public class HRApp {
         Department[] departamente = {new Department("HR"), new Department("Resurse Umane")};
 
 
-        Employee e1 = new Employee(1, "John", 433);
+        Employee e1 = new Employee(1, "John", 400);
         Employee e2 = new Employee(2, "Andrei", 800);
+
 
         d1.addEmployees(e1);
         d1.addEmployees(e2);
+
 
         for (Employee angvaloare : d1.getEmployees()) {
             System.out.println("Employees are : " + angvaloare);
