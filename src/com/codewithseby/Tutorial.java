@@ -6,8 +6,12 @@ package com.codewithseby;
 //{ se pune pe aceeasi linie cu clasa deschisa. Numele clasei trebuie sa inceapa cu litera mare si sa aiba acelasi nume cu fisierul java.
 
 public class Tutorial {
+
+    int myNumarg;   // Global variabila si are valoare 0 implicit fara sa ii dam noi
+
     public static void main(String[] args) {           //sa aiba clasa Main si metoda main
 
+        int myNumarl = 0;   // Local variabila, care se gaseste in metode, constructori si trebuie initializata ca altfel da eroare
     }
 }
     /* tot ce este in bucata asta de cod este comentata
