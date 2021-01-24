@@ -7,11 +7,16 @@ package com.codewithseby;
 
 public class Tutorial {
 
-    int myNumarg;   // Global variabila si are valoare 0 implicit fara sa ii dam noi
+    static int myNumarg;   // Global variabila si are valoare 0 implicit fara sa ii dam noi
 
     public static void main(String[] args) {           //sa aiba clasa Main si metoda main
 
         int myNumarl = 0;   // Local variabila, care se gaseste in metode, constructori si trebuie initializata ca altfel da eroare
+    }
+
+    public static void altametoda () {
+
+        System.out.println(myNumarg);      //La variabila asta avem acces pentru ca este globala
     }
 }
     /* tot ce este in bucata asta de cod este comentata
