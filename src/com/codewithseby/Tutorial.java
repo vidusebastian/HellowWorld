@@ -32,8 +32,13 @@ boolean - true or false
 char - 'A'
 &	AND - Sets each bit to 1 if both bits are 1	5 & 1	0101 & 0001	0001	 1 , transformam numarul in binar .
 && 	Logical and	Returns true if both statements are true	x < 5 &&  x < 10
+boolean g = false  || (f++ < 4);  // daca primul statement este false, a doua expresia nu mai este evaluata. Adica f++ nu se va activa. f va ramane tot 4
 || 	Logical or	Returns true if one of the statements is true	x < 5 || x < 4
 !	Logical not	Reverse the result, returns false if the result is true	!(x < 5 && x < 10)
+^   Returns true daca ambele expresii sunt diferite, rezultatul este true
+
+int f =4;
+f--   Mai intai folosim f =4 in expresia noastra. In expresia urmatoare f va fi = 3
 */
 
 
