@@ -39,6 +39,13 @@ boolean g = false  || (f++ < 4);  // daca primul statement este false, a doua ex
 
 int f =4;
 f--   Mai intai folosim f =4 in expresia noastra. In expresia urmatoare f va fi = 3
+
+  int x = 9;
+  int y =4;
+  boolean z = (x<=10) || (y++ ==4);       // prima conditie e true nu se mai evalueaza a doua conditie  // daca prima conditie e false se evalueaza a doua conditie
+  // si daca avem c1 && c2 || c3  // c1 && c2 da false || c3  se va evalua c3
+
+boolean x = (z = false);   // x = false;
 */
 
 
