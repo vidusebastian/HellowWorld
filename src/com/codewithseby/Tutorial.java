@@ -338,4 +338,4 @@ public class Main {
  */
 
 //switch-ul printeaza de la match case pana la primul break;
-// Loop fara acolade inseamna ca print statmentul din loop va fi in afara loop-ului. ADica se va calca variabila pana la final si dupa aceea o printam doar o singura data, nu de cate ori se face loop-upul.
+// Loop fara acolade inseamna ca doar prima linie  din loop va fi in executata in loop. Adica restul de linii se vor executa in afara.
