@@ -336,3 +336,5 @@ public class Main {
     }
 }
  */
+
+//switch-ul printeaza de la match case pana la primul break;
