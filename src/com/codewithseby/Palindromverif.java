@@ -83,3 +83,25 @@ public class Main {
 
 
  */
+
+
+// Cu STRINGBUILDER
+/*
+    public static void main(String[] args) {
+        String original = "ABA";
+        StringBuilder reverseo = new StringBuilder(original);
+        reverseo.reverse();
+
+        System.out.println(reverseo.toString());
+
+        if (original.equals(reverseo.toString())) {
+            System.out.println("Palindrom");
+        } else {
+            System.out.println("is not palindrom");
+
+        }
+    }
+}
+
+
+ */
