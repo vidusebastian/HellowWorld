@@ -339,3 +339,7 @@ public class Main {
 
 //switch-ul printeaza de la match case pana la primul break;
 // Loop fara acolade inseamna ca doar prima linie  din loop va fi in executata in loop. Adica restul de linii se vor executa in afara.
+
+//obiect1.equals(obiect2)    // comparam valorile obiecteleor
+
+//obiect1 == obiect 2   // comparam referinta obiectelor care daca sunt noi amandoua va fi false. Sau identity hash code.

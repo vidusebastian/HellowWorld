@@ -1,16 +1,16 @@
 package com.codewithseby;
 
+import java.util.Locale;
+import java.util.Random;
 
 public class Main {
 
-
     public static void main(String[] args) {
-     int x = 9;
-     int y =4;
-     boolean z = (x<=1) || (y++ ==4);
+        String mystring = new String("ABA");
+        String rev = new String("ABA");
 
-
-
-        System.out.println(y);
+        System.out.println(mystring.equals(rev));
     }
 }
+
+
