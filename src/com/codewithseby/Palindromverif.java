@@ -92,7 +92,6 @@ public class Main {
         StringBuilder reverseo = new StringBuilder(original);
         reverseo.reverse();
 
-        System.out.println(reverseo.toString());
 
         if (original.equals(reverseo.toString())) {
             System.out.println("Palindrom");
