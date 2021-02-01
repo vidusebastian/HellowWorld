@@ -1,16 +1,18 @@
 package com.codewithseby;
 
-import java.util.Locale;
-import java.util.Random;
 
 public class Main {
-
     public static void main(String[] args) {
-        String mystring = new String("ABA");
-        String rev = new String("ABA");
 
-        System.out.println(mystring.equals(rev));
+        int total = 0;
+        StringBuilder letters = new StringBuilder("abcdefg");
+        total += letters.substring(1, 2).length();
+        System.out.println(total);
+        total += letters.substring(6, 5).length();
+        System.out.println(total);
+
     }
 }
+
 
 

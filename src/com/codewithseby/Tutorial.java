@@ -341,5 +341,8 @@ public class Main {
 // Loop fara acolade inseamna ca doar prima linie  din loop va fi in executata in loop. Adica restul de linii se vor executa in afara.
 
 //obiect1.equals(obiect2)    // comparam valorile obiecteleor
-
 //obiect1 == obiect 2   // comparam referinta obiectelor care daca sunt noi amandoua va fi false. Sau identity hash code.
+//Arrays.equals este la fel ca Array == Array . Adica ambele compara referinta
+
+// substring ( startindex, endindex )   - va returna stringul intre startindex si endindex - 1
+// substring (index) - va returna tot stringul dupa indexul respectiv
