@@ -185,7 +185,7 @@ ArrayList<String> arghhh = new ArrayList<String>(
  */
 
 
-/* ////// Indexul unui Array de returnat
+/* ////// Indexul unui Arraylist de preluat
    ArrayList<Integer> numberz = new ArrayList<>(Arrays.asList(112, 4, 3, 113, 4));
         System.out.println(numberz.get(2));
  */
