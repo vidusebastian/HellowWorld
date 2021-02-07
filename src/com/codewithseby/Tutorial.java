@@ -185,6 +185,11 @@ ArrayList<String> arghhh = new ArrayList<String>(
  */
 
 
+/* ////// Indexul unui Array de returnat
+   ArrayList<Integer> numberz = new ArrayList<>(Arrays.asList(112, 4, 3, 113, 4));
+        System.out.println(numberz.get(2));
+ */
+
 /* // CUM SE CREEAZA MESAJE PENTRU ERORI. sa execute un anumit bloc de cod si sa dea eroare.
 public class Main {
   public static void main(String[] args) {
