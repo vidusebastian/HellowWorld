@@ -173,6 +173,21 @@ public class Main {
 }
  */
 
+
+
+/* //////////////////////// Arraylist stergere cu Listiterator inapoi de la un anumit index
+       ArrayList<Integer> numberz = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4));
+
+        for (ListIterator<Integer> listIterator = numberz.listIterator(3); listIterator.hasPrevious(); ) {
+
+            System.out.println(listIterator.previous());
+            listIterator.remove();  // Sterge inapoi de la index 3
+        }
+        System.out.println(numberz);
+
+
+ */
+
 /*
 /// Popularea uneii Arraylist se face cu Arrays.asList
 ArrayList<String> arghhh = new ArrayList<String>(
