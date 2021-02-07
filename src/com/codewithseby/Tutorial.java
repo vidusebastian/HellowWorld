@@ -5,6 +5,9 @@ package com.codewithseby;
 
 //{ se pune pe aceeasi linie cu clasa deschisa. Numele clasei trebuie sa inceapa cu litera mare si sa aiba acelasi nume cu fisierul java.
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Tutorial {
 
     static int myNumarg;   // Global variabila si are valoare 0 implicit fara sa ii dam noi
@@ -168,6 +171,17 @@ public class Main {
         }
     }
 }
+ */
+
+/*
+/// Popularea uneii Arraylist se face cu Arrays.asList
+ArrayList<String> arghhh = new ArrayList<String>(
+        Arrays.asList("Geeks",
+                "for",
+                "Geeks"));
+        arghhh.add("Crrr");
+                System.out.println(arghhh);
+
  */
 
 
