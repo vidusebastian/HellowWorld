@@ -401,3 +401,11 @@ public class Main {
 }
 
 */
+
+/*// PREDICAT -
+
+    public static void main(String[] args) {
+        Predicate<Integer> obj1 = i -> (i <= 18);
+
+        System.out.println(obj1.test(18));
+ */
