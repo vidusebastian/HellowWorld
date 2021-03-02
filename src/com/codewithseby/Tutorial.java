@@ -380,3 +380,24 @@ public class Main {
 
 // substring ( startindex, endindex )   - va returna stringul intre startindex si endindex - 1
 // substring (index) - va returna tot stringul dupa indexul respectiv
+
+
+
+/* // LAMBDA EXPRESIONS
+
+interface Cars {
+    public void mymethod(String a);
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Cars obj = (String a) -> System.out.println(a + " Test");
+
+
+        obj.mymethod("ABC");
+    }
+}
+
+*/
